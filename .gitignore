@@ -11,3 +11,6 @@ fishd.*
 .cache/
 .logs/
 
+# Private variables
+private_variables.fish
+
