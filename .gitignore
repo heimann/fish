@@ -1,1 +1,13 @@
+# Auto-generated files
 fish_variables
+fishd.*
+*.swp   # Vim swap files
+*.bak   # Backup files
+
+# System-specific
+# Put any machine-specific fish files here if applicable
+
+# Cache and logs
+.cache/
+.logs/
+
