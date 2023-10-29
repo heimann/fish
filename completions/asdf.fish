@@ -1,0 +1,1 @@
+/home/dmeh/.asdf/completions/asdf.fish
