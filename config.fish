@@ -3,6 +3,7 @@ if status is-interactive
 end
 
 set -gx PATH "$HOME/.cargo/bin" $PATH
+set -U fish_user_paths $HOME/.local/bin $fish_user_paths
 set -gx TERM xterm-256color
 
 # Nightfox Color Palette
