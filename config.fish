@@ -41,8 +41,16 @@ set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 
+# Global Variables
+set -x EDITOR nvim
+set -x VISUAL nvim
+set -x PAGER bat
+set -x ERL_AFLAGS "-kernel shell_history enabled"
+
+
 # Abbreviations
 abbr gco 'git checkout'
+alias t='todo.sh'
 
 source ~/.config/fish/private_variables.fish
 
@@ -58,3 +66,15 @@ switch (uname)
 end
 
 starship init fish | source
+
+set -U fish_histfile ~/.local/share/fish/fish_history
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/david/miniconda3/bin/conda
+    eval /home/david/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+end
+# <<< conda initialize <<<
+
+
+
