@@ -77,9 +77,4 @@ if test -f /home/david/miniconda3/bin/conda
 end
 # <<< conda initialize <<<
 
-# initialize cuda 
-set -gx PATH $PATH /usr/local/cuda-11.8/bin
-set -gx LD_LIBRARY_PATH $LD_LIBRARY_PATH /usr/local/cuda-11.8/lib64 /usr/local/cuda-11.8/extras/CUPTI/lib64
-
-
 
