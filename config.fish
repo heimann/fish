@@ -73,9 +73,10 @@ set -U fish_histfile ~/.local/share/fish/fish_history
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /home/david/miniconda3/bin/conda
-    eval /home/david/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+for file in /home/david/miniconda3/bin/conda /home/dmeh/miniconda3/bin/conda
+    if test -f $file
+        eval $file "shell.fish" "hook" $argv | source
+    end
 end
 # <<< conda initialize <<<
-
 
